@@ -12,7 +12,7 @@ export default function CategoryDropdown({width, height,category}) {
   return (
     <Dropdown>
       <Dropdown.Button flat color="orange" 
-      css={{ tt: "capitalize", width:width, height:height, background:"white", borderColor:"Orange", borderRadius:"3px"}}
+      css={{ tt: "capitalize", width:width, height:height, background:"white", borderColor:"Orange", borderRadius:"3px", fontWeight:"bold"}}
        bordered borderWeight="light">
         {selectedValue}
       </Dropdown.Button>

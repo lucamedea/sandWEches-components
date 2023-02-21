@@ -48,11 +48,10 @@ export default function ModifyProduct({width,height,name,description,price,quant
         <TextField label="Description" width="300px" initialValue={description} handleChange={handleChange}/>
 
       </Row>
-      <Spacer y='0.3'/>
       <Row justify="center" xs={12} alignItems='center'> 
         <TextField label="Price(€)" width="300px" initialValue={price} handleChange={handleChange}/>
-        <Spacer x='5.5'/>
-        <SelectNumber w="300px" h="10px" quantity={quantity} />
+        <Spacer x='6'/>
+        <SelectNumber width="300px" height="40px" label="Quantity" quantity={quantity} />
       </Row>
       <Spacer y='0.3'/>
       <Row justify="center" xs={12} alignItems='baseline'> 

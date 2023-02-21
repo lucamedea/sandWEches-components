@@ -1,25 +1,14 @@
 import React from 'react';
-import { TextField } from '@mui/material';
-import './selectNumber.css'
+import { Input } from "@nextui-org/react";
 
-
-function SelectNumber({w,h,value,quantity}) {
-    return (
-        <div >
-   <TextField style={{width:w, height:"10px",background:"white"}}
-          id="selectNumber"
-          label="Quantity"
-          type="number"
-          variant="outlined"
-          color="warning"
-          defaultValue={quantity}
-          focused
-          InputLabelProps={{
-            shrink: true,
-          }}
-          value={value}
-        />
-        </div>
-    )
+export default function selectNumber({width,height,quantity,label}){
+  return(
+    <Input style={{width:width, height:height, borderColor:"orange", background:"white", borderRadius:"3px"}}
+    initialValue={quantity}
+    borderWeight="light"
+    label={label}
+    type="number" 
+    bordered
+    />
+  );
 }
-export default SelectNumber;

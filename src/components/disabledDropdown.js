@@ -12,7 +12,7 @@ export default function DisabledActiveDropdown({width, height,boolActive}) {
   return (
     <Dropdown>
       <Dropdown.Button flat color="#EBEDF0" 
-      css={{ tt: "capitalize", width:width, height:height, background:"#EBEDF0", borderColor:"#EBEDF0", borderRadius:"3px"}}
+      css={{ tt: "capitalize", width:width, height:height, background:"#EBEDF0", borderColor:"#EBEDF0", borderRadius:"3px", fontWeight:"bold"}}
        bordered borderWeight="light">
         {selectedValue}
       </Dropdown.Button>

@@ -47,17 +47,16 @@ kcal,fats,satured_fats,carbohydrates,sugars,proteins,fibers,salt})
         <DisabledTextField label="Description" width="300px" placeholder={description} />
 
       </Row>
-      <Spacer y='0.3'/>
       <Row justify="center" xs={12} alignItems='baseline'> 
         <DisabledTextField label="Price(€)" width="300px" placeholder={price} />
-        <Spacer x='5.5'/>
-        <DisabledSelectNumber w="330px" h="10px" quantity={quantity} />
+        <Spacer x='6'/>
+        <DisabledSelectNumber width="300px" height="40px" label="Quantity" quantity={quantity} />
       </Row>
       <Spacer y='0.3'/>
       <Row justify="center" xs={12} alignItems='baseline'> 
-        <DisabledSelectCategory width="330px" height="40px" category={category}/>
+        <DisabledSelectCategory width="320px" height="40px" category={category}/>
         <Spacer x='6'/>
-        <DisabledSelectActive width="330px"height="40px" boolActive={boolActive}/>
+        <DisabledSelectActive width="320px"height="40px" boolActive={boolActive}/>
       </Row>
 
     <Row justify="center" xs={12} alignItems='baseline'>
