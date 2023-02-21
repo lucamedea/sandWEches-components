@@ -56,9 +56,9 @@ export default function ModifyOffer({width,height,name,description,price,quantit
         <SelectNumber width="300px" height="40px" quantity={quantity} label="Quantity"  />
       </Row>
       <Spacer y='1'/>
-      <Row justify="center" xs={12} display='flex' alignItems='center' > 
-        <DateInput style={{ marginLeft:"0px"}} width="300px" height="40px" date={start} label="Start"/>
-        <Spacer x='6'/>
+      <Row style={{ paddingRight:"142px"}} justify="center" xs={12} display='flex' alignItems='center' > 
+        <DateInput width="300px" height="40px" date={start} label="Start"/>
+        <Spacer x='13'/>
         <DateInput width="300px"height="40px" date={finish} label="Finish"/>
       </Row>
       <Spacer y='1.5'/>

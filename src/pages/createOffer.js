@@ -53,12 +53,10 @@ export default function CreateOffer({width,height})
         <SelectNumber width="300px" height="40px" label="Quantity"  />
       </Row>
       <Spacer y='1'/>
-      <Row justify="center" xs={12} display='flex' alignItems='center'> 
-      <Spacer x='4'/>
+      <Row style={{ paddingRight:"142px"}} justify="center" xs={12} display='flex' alignItems='center'> 
         <DateInput width="300px" height="40px" label="Start"/>
-        <Spacer x='14'/>
+        <Spacer x='13'/>
         <DateInput width="300px"height="40px" label="Finish"/>
-        <Spacer x='10'/>
       </Row>
       <Spacer y='1.5'/>
 
