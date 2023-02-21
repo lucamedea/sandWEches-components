@@ -1,25 +1,21 @@
 import React from 'react';
 import { TextField } from '@mui/material';
-import './selectNumber.css'
 
-
-function SelectNumber({w,h,value,quantity}) {
+function DisabledSelectNumber({w,h,value,quantity}) {
     return (
-        <div >
-   <TextField style={{width:w, height:"10px",background:"white"}}
-          id="selectNumber"
+   <TextField style={{ height:h , width:w, backgroundColor:"#EBEDF0"}}
+          disabled
+          id="disabledSelectNumber"
           label="Quantity"
           type="number"
           variant="outlined"
-          color="warning"
+          backgroundColor="#EBEDF0"
           defaultValue={quantity}
-          focused
           InputLabelProps={{
             shrink: true,
           }}
           value={value}
         />
-        </div>
     )
 }
-export default SelectNumber;
+export default DisabledSelectNumber;

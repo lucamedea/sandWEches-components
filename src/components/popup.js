@@ -1,7 +1,8 @@
 import React from "react";
 import { Modal, Button, Text, Input, Row, Checkbox } from "@nextui-org/react";
+import YellowButton from "./yellowButton";
 
-export default function App() {
+export default function Popup({text,heigth}) {
   const [visible, setVisible] = React.useState(false);
   const handler = () => setVisible(true);
 
@@ -12,9 +13,9 @@ export default function App() {
 
   return (
     <div>
-      <Button auto shadow onPress={handler}>
-        Open modal
-      </Button>
+      <YellowButton auto shadow onClick={handler} height={heigth} >
+        {text}
+      </YellowButton>
       <Modal
         closeButton
         aria-labelledby="modal-title"

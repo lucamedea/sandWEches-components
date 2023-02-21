@@ -1,13 +1,13 @@
 import { Button } from "@nextui-org/react";
 
-const yellowButton = ({ height, width, text, onPress, textSize }) => {
+const orangeButton = ({ height, width, text, onPress, textSize }) => {
   return (
     <Button
       style={{
         height: height,
         width: width,
-        background: "#FDEB8B",
-        color: "black",
+        background: "#E9642C",
+        color: "white",
         fontWeight: "bolder",
         fontSize: textSize,
         borderRadius: "50px",
@@ -20,4 +20,4 @@ const yellowButton = ({ height, width, text, onPress, textSize }) => {
   );
 };
 
-export default yellowButton;
+export default orangeButton;

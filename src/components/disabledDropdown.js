@@ -1,7 +1,7 @@
 import React from "react";
 import { Dropdown } from "@nextui-org/react";
 
-export default function ActiveDropdown({width, height,boolActive}) {
+export default function DisabledActiveDropdown({width, height,boolActive}) {
   const [selected, setSelected] = React.useState(new Set([boolActive]));
 
   const selectedValue = React.useMemo(
@@ -11,14 +11,15 @@ export default function ActiveDropdown({width, height,boolActive}) {
 
   return (
     <Dropdown>
-      <Dropdown.Button flat color="orange" 
-      css={{ tt: "capitalize", width:width, height:height, background:"white", borderColor:"Orange", borderRadius:"3px"}}
+      <Dropdown.Button flat color="#EBEDF0" 
+      css={{ tt: "capitalize", width:width, height:height, background:"#EBEDF0", borderColor:"#EBEDF0", borderRadius:"3px"}}
        bordered borderWeight="light">
         {selectedValue}
       </Dropdown.Button>
       <Dropdown.Menu
+      disabledKeys={["Active", "Non Active"]}
         aria-label="Single selection actions"
-        color="white"
+        color="#EBEDF0"
         disallowEmptySelection
         selectionMode="single"
         selectedKeys={selected}

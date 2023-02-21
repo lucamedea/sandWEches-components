@@ -9,7 +9,6 @@
 .nextui-c-iwmZdB{
     --nextui--inputBorderColor: orange;
     --nextui--inputHoverBorderColor: orange;
-    
 
 }
 .nextui-c-iwmZdB-gOvjVW-size-md {
@@ -17,4 +16,7 @@
 }
 .nextui-c-iwmZdB-dpkacN-borderWeight-normal {
     --nextui--inputBorderWeight: var(--nextui-borderWeights-light);
+}
+.nextui-c-hzQjrs {
+    color:black;
 }

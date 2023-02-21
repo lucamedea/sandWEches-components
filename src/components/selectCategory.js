@@ -1,8 +1,8 @@
 import React from "react";
 import { Dropdown } from "@nextui-org/react";
 
-export default function ActiveDropdown({width, height,boolActive}) {
-  const [selected, setSelected] = React.useState(new Set([boolActive]));
+export default function CategoryDropdown({width, height,category}) {
+  const [selected, setSelected] = React.useState(new Set([category]));
 
   const selectedValue = React.useMemo(
     () => Array.from(selected).join(", ").replaceAll("_", " "),
@@ -24,8 +24,11 @@ export default function ActiveDropdown({width, height,boolActive}) {
         selectedKeys={selected}
         onSelectionChange={setSelected}
       >
-        <Dropdown.Item key="Active">Active</Dropdown.Item>
-        <Dropdown.Item key="Non Active">Non Active</Dropdown.Item>
+        <Dropdown.Item key="Panino">Panino</Dropdown.Item>
+        <Dropdown.Item key="Piadina">Piadina</Dropdown.Item>
+        <Dropdown.Item key="Snack">Snack</Dropdown.Item>
+        <Dropdown.Item key="Dolce">Dolce</Dropdown.Item>
+        <Dropdown.Item key="Bibita">Bibita</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );

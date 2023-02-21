@@ -1,13 +1,3 @@
-
-.nextui-c-iwmZdB-gOvjVW-size-md {
-    --nextui--inputBorderRadius: var(--nextui-space-1);
-}
-.nextui-c-iwmZdB-dpkacN-borderWeight-normal {
-    --nextui--inputBorderWeight: var(--nextui-borderWeights-light);
-}
-.nextui-c-iwmZdB-gOvjVW-size-md {
-    --nextui--inputBorderRadius: var(--nextui-space-1);
-}
-.nextui-c-iwmZdB-dpkacN-borderWeight-normal {
-    --nextui--inputBorderWeight: var(--nextui-borderWeights-light);
+.nextui-c-eXOOPO-gvlAwB-disabled-true {
+    background: var(--nextui--inputColor);
 }
