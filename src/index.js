@@ -7,6 +7,7 @@ import ModifyProduct from './pages/modifyProduct';
 import ViewProduct from './pages/viewProduct';
 import CreateOffer from './pages/createOffer';
 import ModifyOffer from './pages/modifyOffer';
+import AddNewAccount from './pages/addNewAccount';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,7 +29,7 @@ sugars="20" proteins="30" fibers="30" salt="9"></ViewProduct>
  <ModifyOffer width="800" height="800" name="Mega offerta" description="super conveniente" price="500" 
 quantity="10" start='2023-02-21' finish="2023-02-01" active="Active"> </ModifyOffer>
   */
-<CreateOffer width="800" height="800"> </CreateOffer>
+ <AddNewAccount width="800" height="800"></AddNewAccount>
 
 );
 
