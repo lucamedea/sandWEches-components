@@ -1,8 +1,9 @@
 import React from "react";
-import { Modal, Button, Text, Input, Row, Checkbox } from "@nextui-org/react";
+import { Modal, Button, Text, Input, Row, Checkbox, Spacer} from "@nextui-org/react";
 import YellowButton from "./yellowButton";
+import DeleteButton from "./deleteButton";
 
-export default function Popup({text,heigth}) {
+export default function Popup({height,width}) {
   const [visible, setVisible] = React.useState(false);
   const handler = () => setVisible(true);
 
@@ -13,29 +14,32 @@ export default function Popup({text,heigth}) {
 
   return (
     <div>
-      <YellowButton auto shadow onClick={handler} height={heigth} >
-        {text}
+      <YellowButton    
+          height="30px"
+          width="80px"
+          text="Delete"
+          textSize={12}
+         auto shadow 
+         onPress={handler}>
       </YellowButton>
-      <Modal
+
+      <Modal style={{ height:`${height}px`}}
+       width={width}
         closeButton
         aria-labelledby="modal-title"
         open={visible}
         onClose={closeHandler}
       >
-        <Text size={14}>Do you want to delete this account?</Text>
+        <Spacer y="1"/>
+        <Text size={18} weight="normal">Do you want to delete this account?</Text>
         <Modal.Body>
-          <Row justify="space-between">
-          </Row>
         </Modal.Body>
         <Modal.Footer style={{justifyContent:'center', display:'flex', paddingLeft:'4vw'}} >
-          <div style={{justifyContent:'center', display:'flex'}}>
-          <Button auto flat color="error" onPress={closeHandler}>
-            Close
-          </Button>
-          </div>
-          <Button auto onPress={closeHandler}>
-            Delete
-          </Button>
+        <Row justify="center" xs={12} alignItems="center">
+          <YellowButton height="45px" width="120px" text="Back" textSize="14" onPress={closeHandler}/>
+          <Spacer x="1.5"/>
+          <DeleteButton height="45px" width="120px" text="Delete" textSize="14"/>
+          </Row>
         </Modal.Footer>
       </Modal>
     </div>
